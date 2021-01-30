@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+
+.nfsb-fixed{
+    li{
+        float:left;    
+    }
+
+    li:not(.header-title){
+        display: block;
+        padding: 5px 2px;
+        width: 25%;
+    }
+
+    .top-line{
+        border-top: 1px solid #ddd;
+        margin-top:8px;
+        padding-top: 2px;
+    }
+
+    li.header-title {
+        height: 30px;
+        line-height: 25px;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+    }
+
+    fa-icon svg{
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 0 0 6px 6px;
+        width: auto;
+    }
+}

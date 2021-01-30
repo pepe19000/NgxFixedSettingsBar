@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { INgxFixedSettingsBarStyleConfig } from 'ngx-fixed-settings-bar';
+
 
 @Component({
-  selector: 'FSB-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-root',
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'FixedSettingsBar';
+  faCog = faCog;
+  config: INgxFixedSettingsBarStyleConfig = {
+    
+  };
+
+  constructor(){
+
+  }
 }

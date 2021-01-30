@@ -1,0 +1,10 @@
+<div class="nfsb-fixed" [ngStyle]="{'top': styleConfig.top + 'px', 'background': styleConfig.backgroundColor}">
+    <div class="dropdown show-dropdown open">
+      <a href="#" data-toggle="dropdown" aria-expanded="false">
+        <ng-content select="[settings-icon]"></ng-content>
+      </a>
+      <ul stopPropagation class="dropdown-menu" x-placement="bottom-start">
+        <ng-content select="[settings-body]"></ng-content>        
+      </ul>
+    </div>
+</div>

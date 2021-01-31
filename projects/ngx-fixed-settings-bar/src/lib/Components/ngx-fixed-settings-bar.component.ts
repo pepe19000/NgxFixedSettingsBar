@@ -18,7 +18,8 @@ export class NgxFixedSettingsBarComponent implements OnInit {
       if(!this.styleConfig)
         this.styleConfig = {
           top: 115,
-          backgroundColor: "rgba(30,30,30,0.5)"
+          backgroundColor: "rgba(30,30,30,0.5)",
+          xPlacement: "bottom-end"
         }
   }
 }

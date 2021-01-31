@@ -6,7 +6,7 @@ This is an Angular module. It helps with show a fixed settings bar with dropdown
 
 Check out [the demo](https://pepe19000.github.io/Demo/)!
 
-*Note: v11.0.8 is out and supports Angular 11!*
+*Note: v11.0.9 is out and supports Angular 11!*
 
 ## Install
 
@@ -112,7 +112,7 @@ For example:
 
 ## Override Default Styles
 
-Currently you can only set settings bar top and background styles with config.
+Currently you can only set settings bar's top, background and transform-origin (x-placement) styles with config.
 Default config looks like this:
 
 ```ts
@@ -121,7 +121,8 @@ Default config looks like this:
 export class AppComponent {
     config: INgxFixedSettingsBarStyleConfig = {
         top: 115,
-        backgroundColor: "rgba(30,30,30,0.5)"
+        backgroundColor: "rgba(30,30,30,0.5)",
+        xPlacement: "bottom-end"
     };
 
     ...
@@ -140,7 +141,9 @@ And give this config to Component through `styleConfig` attribute like an `@Inpu
 
 ### INgxFixedSettingsBarStyleConfig properties
 
+
 | Property | Type |
 | --- | --- |
 | `top` | number? |
 | `backgroundColor` | string? |
+| `xPlacement` | string?: `bottom-start`, `bottom-end`, `top-start`, `top-end` |

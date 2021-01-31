@@ -26,15 +26,11 @@ $bmd-animation-curve-default: $bmd-animation-curve-fast-out-slow-in !default;
             opacity: 0;
             visibility: hidden;
             left: -303px !important;
-            transform-origin: 100% 0;
             top: -40px !important;
             display: none;
             padding: $bmd-dropdown-margin-y 0;
             border: 0;
-            opacity: 0;
             transform: scale(0);
-            transform-origin: 0 0;
-            will-change: transform, opacity;
             transition: transform $bmd-menu-expand-duration $bmd-animation-curve-default, opacity $bmd-menu-fade-duration $bmd-animation-curve-default;
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
@@ -58,20 +54,20 @@ $bmd-animation-curve-default: $bmd-animation-curve-fast-out-slow-in !default;
                 transform: scale(0);
             }
 
-            &[x-placement="bottom-start"] {
-                transform-origin: 0 0;
+            &[custom-x-placement="bottom-start"] {
+                transform-origin: 0 0 !important;
             }
 
-            &[x-placement="bottom-end"] {
-                transform-origin: 100% 0;
+            &[custom-x-placement="bottom-end"] {
+                transform-origin: 100% 0 !important;
             }
 
-            &[x-placement="top-start"] {
-                transform-origin: 0 100%;
+            &[custom-x-placement="top-start"] {
+                transform-origin: 0 100% !important;
             }
 
-            &[x-placement="top-end"] {
-                transform-origin: 100% 100%;
+            &[custom-x-placement="top-end"] {
+                transform-origin: 100% 100% !important;
             }
 
             &:after, &:before{

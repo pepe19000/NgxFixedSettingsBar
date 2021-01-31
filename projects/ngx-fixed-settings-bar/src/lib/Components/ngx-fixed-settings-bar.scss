@@ -1,3 +1,9 @@
+$bmd-menu-fade-duration: 0.2s !default;
+$bmd-dropdown-margin-y: .3125rem !default;
+$bmd-menu-expand-duration: 0.3s !default;
+$bmd-animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$bmd-animation-curve-default: $bmd-animation-curve-fast-out-slow-in !default;
+
 .nfsb-fixed{
     position: fixed;
     right: 0;
@@ -22,6 +28,51 @@
             left: -303px !important;
             transform-origin: 100% 0;
             top: -40px !important;
+            display: none;
+            padding: $bmd-dropdown-margin-y 0;
+            border: 0;
+            opacity: 0;
+            transform: scale(0);
+            transform-origin: 0 0;
+            will-change: transform, opacity;
+            transition: transform $bmd-menu-expand-duration $bmd-animation-curve-default, opacity $bmd-menu-fade-duration $bmd-animation-curve-default;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+            &.showing {
+                animation-name: bmd-dropdown-animation;
+                animation-duration: $bmd-menu-expand-duration;
+                animation-fill-mode: forwards;
+                animation-timing-function: $bmd-animation-curve-default;
+            }
+
+            .open > &,
+            &.show {
+                display: block;
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            &.hiding {
+                display: block;
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            &[x-placement="bottom-start"] {
+                transform-origin: 0 0;
+            }
+
+            &[x-placement="bottom-end"] {
+                transform-origin: 100% 0;
+            }
+
+            &[x-placement="top-start"] {
+                transform-origin: 0 100%;
+            }
+
+            &[x-placement="top-end"] {
+                transform-origin: 100% 100%;
+            }
 
             &:after, &:before{
                 right: 10px;
@@ -57,6 +108,17 @@
                 opacity: 1;
                 visibility: visible;
                 transform: scale(1);
+            }
+        }
+
+        @keyframes bmd-dropdown-animation {
+            from {
+              opacity: 0;
+              transform: scale(0);
+            }
+            to {
+              opacity: 1;
+              transform: scale(1);
             }
         }
     }

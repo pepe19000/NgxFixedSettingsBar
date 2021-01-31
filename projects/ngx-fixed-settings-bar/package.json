@@ -1,6 +1,6 @@
 {
   "name": "ngx-fixed-settings-bar",
-  "version": "11.0.7",
+  "version": "11.0.8",
   "description": "A simple Angular fixed settings bar component with dropdown menu with help of Bootstrap",
   "author": "Péter Babják",
   "repository": {

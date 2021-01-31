@@ -6,7 +6,7 @@ This is an Angular module. It helps with show a fixed settings bar with dropdown
 
 Check out [the demo](https://pepe19000.github.io/Demo/)!
 
-*Note: v11.0.9 is out and supports Angular 11!*
+*Note: v11.0.10 is out and supports Angular 11!*
 
 ## Install
 

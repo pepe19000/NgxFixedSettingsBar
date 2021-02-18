@@ -4,9 +4,9 @@ This is an Angular module. It helps with show a fixed settings bar with dropdown
 
 [![npm downloads](https://img.shields.io/npm/dm/ngx-fixed-settings-bar.svg)](http://npm-stat.com/charts.html?package=ngx-fixed-settings-bar)
 
-Check out [the demo](https://pepe19000.github.io/Demo/)!
+Check out [the demo](https://pepe19000.github.io/Demo/menu/NgxFixedSettingsBar)!
 
-*Note: v11.0.10 is out and supports Angular 11!*
+*Note: v11.0.11 is out and supports Angular 11!*
 
 ## Install
 
@@ -34,7 +34,7 @@ import { NgxFixedSettingsBarModule } from 'ngx-fixed-settings-bar';
 export class AppModule { }
 ```
 
-*Important: This module work with bootstrap, popper, jquery and bootstrap-material-design, so install & import of these are REQUIRE!!*
+*Important: This module work with bootstrap, popper, jquery and bootstrap-material-design, so install & import of these are REQUIRED!!*
 
 3) Next step is install dependencies: `npm install bootstrap bootstrap-material-design jquery popper.js`
 

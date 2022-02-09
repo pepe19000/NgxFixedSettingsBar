@@ -1,6 +1,6 @@
 {
   "name": "ngx-fixed-settings-bar",
-  "version": "12.2.1",
+  "version": "13.0.1",
   "description": "A simple Angular fixed settings bar component with dropdown menu with help of Bootstrap",
   "author": "Péter Babják",
   "repository": {
@@ -24,8 +24,8 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "~12.2.1",
-    "@angular/core": "~12.2.1"
+    "@angular/common": "~13.2.2",
+    "@angular/core": "~13.2.2"
   },
   "dependencies": {
     "tslib": "^2.0.0"
